@@ -3,1051 +3,913 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="St. Augustine's Senior High School, Bogoso – AUGUSCO. A prestigious mixed-gender public school in the Western Region of Ghana, offering quality education since 1957." />
-  <title>St. Augustine's Senior High School – AUGUSCO | Bogoso, Ghana</title>
+  <meta name="description" content="St. Augustine's Senior High School (AUGUSCO), Bogoso — a prestigious Catholic mixed-gender school in the Western Region of Ghana, offering quality education since 1957." />
+  <title>AUGUSCO — St. Augustine's Senior High School, Bogoso</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Fade-up animation -->
-  <style>
-    .fade-up {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity .6s ease, transform .6s ease;
-    }
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .fade-up:nth-child(2) { transition-delay: .1s; }
-    .fade-up:nth-child(3) { transition-delay: .2s; }
-    .fade-up:nth-child(4) { transition-delay: .3s; }
-    .fade-up:nth-child(5) { transition-delay: .4s; }
-    .fade-up:nth-child(6) { transition-delay: .5s; }
-  </style>
 </head>
 <body>
 
-  <!-- ===== TOPBAR ===== -->
-  <div class="topbar">
-    <div class="container">
-      <div class="topbar-left">
-        <span><i class="fas fa-map-marker-alt"></i> Bogoso, Western Region, Ghana</span>
-        <span><i class="fas fa-phone"></i> +233 3122 12345</span>
-        <span><i class="fas fa-envelope"></i> info@augusco.edu.gh</span>
-      </div>
-      <div class="topbar-right">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="https://augusco.myonlineadmission.com/" target="_blank" style="color:var(--yellow);font-weight:600;">
-          <i class="fas fa-user-graduate"></i> Online Admissions
-        </a>
-      </div>
+<!-- ─── TOPBAR ─────────────────────────────────────────── -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span><i class="fas fa-map-marker-alt"></i>Bogoso, Western Region, Ghana</span>
+      <span><i class="fas fa-phone"></i>+233 3122 12345</span>
+      <span><i class="fas fa-envelope"></i>info@augusco.edu.gh</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://augusco.myonlineadmission.com/" target="_blank" style="color:var(--y500);font-weight:700;">
+        <i class="fas fa-arrow-up-right-from-square"></i> Apply Online
+      </a>
     </div>
   </div>
+</div>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="#home" class="nav-logo">
-          <div class="logo-icon"><span>A</span></div>
-          <div class="nav-logo-text">
-            <div class="school-name">St. Augustine's SHS</div>
-            <div class="school-tag">AUGUSCO · Est. 1957</div>
-          </div>
-        </a>
-
-        <ul class="nav-links">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#programs">Academics</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#authorities">Leadership</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#admissions">Admissions</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="nav-cta">
-            <a href="#admissions" class="btn btn-primary">
-              <i class="fas fa-pen-to-square"></i> Apply Now
-            </a>
-          </li>
-        </ul>
-
-        <button class="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <i class="fas fa-star"></i>
-          Category C School · Western Region
+<!-- ─── NAVBAR ─────────────────────────────────────────── -->
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-mark"><span>A</span></div>
+        <div class="logo-text-block">
+          <div class="l1">St. Augustine's SHS</div>
+          <div class="l2">AUGUSCO · Est. 1957</div>
         </div>
-        <h1>Shaping <span>Leaders</span> of Tomorrow</h1>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Academics</a></li>
+        <li><a href="#authorities">Leadership</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-cta"><a href="#admissions" class="btn btn-gold"><i class="fas fa-pen"></i> Apply Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── HERO ───────────────────────────────────────────── -->
+<section id="home" class="hero">
+  <div class="hero-rings">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Catholic · Mixed · Western Region</div>
+        <h1 class="hero-title">
+          Shaping <em>Leaders</em><br/>of Tomorrow
+        </h1>
         <p class="hero-sub">
-          St. Augustine's Senior High School — AUGUSCO — has been delivering
-          exceptional Catholic-values-based education in Bogoso since 1957,
-          guided by <em>Faith, Hope &amp; Love</em>.
+          St. Augustine's Senior High School — AUGUSCO — has delivered transformative, faith-centred education in Bogoso since 1957, guided by the values of <strong style="color:var(--y400);">Faith, Hope &amp; Love</strong>.
         </p>
-        <div class="hero-actions">
-          <a href="#admissions" class="btn btn-primary">
-            <i class="fas fa-graduation-cap"></i> Apply for Admission
-          </a>
-          <a href="#about" class="btn btn-outline">
-            <i class="fas fa-play-circle"></i> Discover AUGUSCO
-          </a>
+        <div class="hero-btns">
+          <a href="#admissions" class="btn btn-gold"><i class="fas fa-graduation-cap"></i> Apply for Admission</a>
+          <a href="#about" class="btn btn-ghost"><i class="fas fa-play-circle"></i> Discover AUGUSCO</a>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">1957</div>
-            <div class="hero-stat-label">Year Founded</div>
+        <div class="hero-kpis">
+          <div class="kpi">
+            <div class="kpi-num">1957</div>
+            <div class="kpi-label">Year Founded</div>
           </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">6</div>
-            <div class="hero-stat-label">Programmes Offered</div>
+          <div class="kpi">
+            <div class="kpi-num">6</div>
+            <div class="kpi-label">Programmes</div>
           </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">67+</div>
-            <div class="hero-stat-label">Years of Excellence</div>
+          <div class="kpi">
+            <div class="kpi-num">2000<span style="font-size:1.4rem">+</span></div>
+            <div class="kpi-label">Students</div>
           </div>
-          <div class="hero-stat-item">
-            <div class="hero-stat-num">WR</div>
-            <div class="hero-stat-label">Western Region</div>
+          <div class="kpi">
+            <div class="kpi-num">67<span style="font-size:1.4rem">yrs</span></div>
+            <div class="kpi-label">Of Excellence</div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- decorative circle -->
-    <svg class="hero-graphic" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="200" cy="200" r="190" stroke="white" stroke-width="2"/>
-      <circle cx="200" cy="200" r="140" stroke="white" stroke-width="1"/>
-      <circle cx="200" cy="200" r="80" stroke="white" stroke-width="1"/>
-      <line x1="10" y1="200" x2="390" y2="200" stroke="white" stroke-width="1"/>
-      <line x1="200" y1="10" x2="200" y2="390" stroke="white" stroke-width="1"/>
-    </svg>
-  </section>
-
-  <!-- ===== ANNOUNCEMENT ===== -->
-  <div class="announcement">
-    <div class="container">
-      <div class="announcement-inner">
-        <span class="ann-label"><i class="fas fa-bullhorn"></i> Updates</span>
-        <div class="ann-scroll">
-          <div class="ann-track">
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> 2025/2026 WASSCE Registration is now open — visit the school's administration office</span>
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> Welcome to the new AUGUSCO website! Stay connected for school news and updates</span>
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> Prospective students: Online admissions portal is open at augusco.myonlineadmission.com</span>
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> Inter-school Sports Competition — AUGUSCO takes 2nd place in the Western Region Athletics Meet</span>
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> 2025/2026 WASSCE Registration is now open — visit the school's administration office</span>
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> Welcome to the new AUGUSCO website! Stay connected for school news and updates</span>
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> Prospective students: Online admissions portal is open at augusco.myonlineadmission.com</span>
-            <span><i class="fas fa-circle" style="font-size:.45rem;"></i> Inter-school Sports Competition — AUGUSCO takes 2nd place in the Western Region Athletics Meet</span>
+      <div class="hero-card-panel">
+        <div class="hcp-title">School Motto</div>
+        <div class="hcp-motto">"Fides, Spes et Caritas"<br/><span style="font-size:.9rem;color:rgba(255,255,255,.5);">Faith, Hope and Love</span></div>
+        <div class="hcp-divider"></div>
+        <div class="hcp-values">
+          <div class="hcp-value">
+            <div class="hcp-value-dot gold"><i class="fas fa-cross"></i></div>
+            <div class="hcp-value-text">Faith — our spiritual foundation</div>
           </div>
+          <div class="hcp-value">
+            <div class="hcp-value-dot light"><i class="fas fa-dove"></i></div>
+            <div class="hcp-value-text">Hope — our guiding vision</div>
+          </div>
+          <div class="hcp-value">
+            <div class="hcp-value-dot gold"><i class="fas fa-heart"></i></div>
+            <div class="hcp-value-text">Love — our daily practice</div>
+          </div>
+        </div>
+        <div class="hcp-divider"></div>
+        <div class="hcp-title">Programmes Offered</div>
+        <div class="hcp-programme-row">
+          <span class="hcp-prog-pill">General Science</span>
+          <span class="hcp-prog-pill">General Arts</span>
+          <span class="hcp-prog-pill">Agric. Science</span>
+          <span class="hcp-prog-pill">Business</span>
+          <span class="hcp-prog-pill">Visual Arts</span>
+          <span class="hcp-prog-pill">Home Econs</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about">
-    <div class="container">
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="white">
+      <path d="M0,32 C360,64 1080,0 1440,32 L1440,60 L0,60 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ─── TICKER ──────────────────────────────────────────── -->
+<div class="ticker">
+  <div class="container">
+    <div class="ticker-inner">
+      <span class="ticker-label"><i class="fas fa-bullhorn"></i> Updates</span>
+      <div class="ticker-track-wrap">
+        <div class="ticker-track">
+          <span>2025/2026 WASSCE Registration is now open — visit the administration office</span>
+          <span>Welcome to the new AUGUSCO website! Stay connected for school updates</span>
+          <span>Online admissions portal open at augusco.myonlineadmission.com</span>
+          <span>AUGUSCO finishes 2nd at the Western Region Inter-Schools Athletics Meet</span>
+          <span>2025/2026 WASSCE Registration is now open — visit the administration office</span>
+          <span>Welcome to the new AUGUSCO website! Stay connected for school updates</span>
+          <span>Online admissions portal open at augusco.myonlineadmission.com</span>
+          <span>AUGUSCO finishes 2nd at the Western Region Inter-Schools Athletics Meet</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── ABOUT ───────────────────────────────────────────── -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
       <div class="about-visual">
-        <div class="about-img-wrap">
-          <div class="about-img-placeholder">
+        <div class="about-img-main">
+          <div class="about-img-placeholder-inner">
             <i class="fas fa-school"></i>
-            <p>AUGUSCO Campus<br/>Bogoso, Western Region</p>
+            <p>AUGUSCO Campus<br/>Bogoso, Ghana</p>
           </div>
         </div>
-        <div class="about-badge">
-          <div class="badge-num">67<sup>+</sup></div>
-          <div class="badge-text">Years of<br/>Excellence</div>
+        <div class="about-float-card">
+          <div class="afc-num">67<sup style="font-size:1.5rem">+</sup></div>
+          <div class="afc-label">Years of<br/>Excellence</div>
+        </div>
+        <div class="about-float-badge">
+          <div class="afb-icon"><i class="fas fa-award"></i></div>
+          <div class="afb-text">
+            <div class="t1">Established</div>
+            <div class="t2">Since 1957</div>
+          </div>
         </div>
       </div>
 
-      <div class="about-text">
-        <span class="section-tag">About AUGUSCO</span>
-        <h2 class="section-title">A Legacy of Academic Excellence</h2>
-        <p style="color:var(--gray-600);margin-bottom:1rem;line-height:1.8;">
-          Established in <strong>1957</strong>, St. Augustine's Senior High School — affectionately known
-          as <strong>AUGUSCO</strong> — is a distinguished mixed-gender Catholic school located in
-          <strong>Bogoso</strong>, in the Western Region of Ghana.
+      <div class="about-content">
+        <span class="section-label">About AUGUSCO</span>
+        <h2 class="section-h">A Legacy of Academic Excellence</h2>
+        <p style="color:var(--ink2);line-height:1.85;margin-bottom:1rem;">
+          Established in <strong>1957</strong>, St. Augustine's Senior High School — affectionately known as <strong>AUGUSCO</strong> — is a distinguished mixed-gender Catholic school located in <strong>Bogoso</strong>, in the Western Region of Ghana.
         </p>
-        <p style="color:var(--gray-600);margin-bottom:1rem;line-height:1.8;">
-          Originally founded as the teacher training section of St. Augustine's College, Cape Coast,
-          the school was relocated and transformed into a secondary institution under the guidance
-          of the Catholic Church. By 1973 it had fully evolved into the dynamic senior high school it is today.
+        <p style="color:var(--ink3);line-height:1.85;margin-bottom:1rem;">
+          Originally founded as the teacher-training section of St. Augustine's College, Cape Coast, the school was relocated and transformed into a secondary institution under the guidance of the Catholic Church. By 1973 it had fully evolved into the dynamic senior high school it is today.
         </p>
-        <p style="color:var(--gray-600);margin-bottom:2rem;line-height:1.8;">
-          We are committed to the holistic development of every student — academically, morally,
-          and socially — in an environment grounded in our three core values.
+        <p style="color:var(--ink3);line-height:1.85;">
+          We are deeply committed to the holistic development of every student — academically, morally, and socially — in an environment grounded in our three enduring values.
         </p>
-
-        <div class="about-values">
-          <div class="value-pill"><i class="fas fa-cross"></i> Faith</div>
-          <div class="value-pill"><i class="fas fa-dove"></i> Hope</div>
-          <div class="value-pill"><i class="fas fa-heart"></i> Love</div>
+        <div class="about-values-row">
+          <span class="val-chip"><i class="fas fa-cross"></i> Faith</span>
+          <span class="val-chip"><i class="fas fa-dove"></i> Hope</span>
+          <span class="val-chip"><i class="fas fa-heart"></i> Love</span>
         </div>
-
-        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="#programs" class="btn btn-green">
-            <i class="fas fa-book-open"></i> Our Programmes
-          </a>
-          <a href="#admissions" class="btn btn-primary">
-            <i class="fas fa-file-alt"></i> How to Apply
-          </a>
+        <div class="about-ctas">
+          <a href="#programs" class="btn btn-dark"><i class="fas fa-book-open"></i> Our Programmes</a>
+          <a href="#admissions" class="btn btn-outline-g"><i class="fas fa-file-alt"></i> How to Apply</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== STATS ===== -->
-  <section class="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item fade-up">
-          <div class="stat-num" data-target="1957" data-suffix="">1957</div>
-          <div class="stat-label">Year Established</div>
-        </div>
-        <div class="stat-item fade-up">
-          <div class="stat-num"><span data-target="2000" data-suffix="+">0+</span></div>
-          <div class="stat-label">Students Enrolled</div>
-        </div>
-        <div class="stat-item fade-up">
-          <div class="stat-num"><span data-target="120" data-suffix="+">0+</span></div>
-          <div class="stat-label">Qualified Staff</div>
-        </div>
-        <div class="stat-item fade-up">
-          <div class="stat-num"><span data-target="6" data-suffix="">0</span></div>
-          <div class="stat-label">Academic Programmes</div>
-        </div>
+<!-- ─── STATS ───────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-grid">
+      <div class="sb-item fade-up">
+        <div class="sb-num" data-target="1957" data-suffix="">1957</div>
+        <div class="sb-label">Year Established</div>
+      </div>
+      <div class="sb-item fade-up">
+        <div class="sb-num"><span data-target="2000" data-suffix="+">0+</span></div>
+        <div class="sb-label">Students Enrolled</div>
+      </div>
+      <div class="sb-item fade-up">
+        <div class="sb-num"><span data-target="120" data-suffix="+">0+</span></div>
+        <div class="sb-label">Qualified Staff</div>
+      </div>
+      <div class="sb-item fade-up">
+        <div class="sb-num"><span data-target="6" data-suffix="">0</span></div>
+        <div class="sb-label">Academic Programmes</div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- ===== PROGRAMS ===== -->
-  <section id="programs" class="programs">
-    <div class="container">
-      <div class="programs-header">
-        <span class="section-tag">Academic Departments</span>
-        <h2 class="section-title">Discover Your Path</h2>
-        <p class="section-sub">Six WAEC-approved programmes led by dedicated Heads of Department committed to your success.</p>
-      </div>
-
-      <div class="dept-grid">
-
-        <!-- Science -->
-        <div class="dept-card fade-up">
-          <div class="dept-top">
-            <div class="dept-emoji-icon green">🔬</div>
-            <div class="dept-name-wrap">
-              <h3 class="dept-title">General Science</h3>
-              <span class="dept-badge">STEM Focus</span>
-            </div>
-          </div>
-          <p class="dept-desc">A rigorous programme preparing students for careers in medicine, engineering, pharmacy, and scientific research. Students gain deep analytical and practical laboratory skills.</p>
-          <div class="dept-subjects-title"><i class="fas fa-book-open"></i> Courses Offered</div>
-          <div class="prog-subjects">
-            <span class="prog-subject">Core Mathematics</span>
-            <span class="prog-subject">Elective Mathematics</span>
-            <span class="prog-subject">Physics</span>
-            <span class="prog-subject">Chemistry</span>
-            <span class="prog-subject">Biology</span>
-            <span class="prog-subject">ICT</span>
-          </div>
-          <div class="hod-strip">
-            <div class="hod-avatar green">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="hod-info">
-              <div class="hod-label">Head of Department</div>
-              <div class="hod-name">Upload Photo</div>
-              <div class="hod-note">Replace avatar with HOD photo</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Arts -->
-        <div class="dept-card fade-up">
-          <div class="dept-top">
-            <div class="dept-emoji-icon yellow">📚</div>
-            <div class="dept-name-wrap">
-              <h3 class="dept-title">General Arts</h3>
-              <span class="dept-badge">Humanities</span>
-            </div>
-          </div>
-          <p class="dept-desc">Explores humanities and social sciences, nurturing critical thinkers, writers, lawyers, journalists, and policy makers. Students develop strong communication and analytical skills.</p>
-          <div class="dept-subjects-title"><i class="fas fa-book-open"></i> Courses Offered</div>
-          <div class="prog-subjects">
-            <span class="prog-subject">Literature in English</span>
-            <span class="prog-subject">History</span>
-            <span class="prog-subject">Government</span>
-            <span class="prog-subject">French</span>
-            <span class="prog-subject">Economics</span>
-            <span class="prog-subject">Geography</span>
-          </div>
-          <div class="hod-strip">
-            <div class="hod-avatar yellow">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="hod-info">
-              <div class="hod-label">Head of Department</div>
-              <div class="hod-name">Upload Photo</div>
-              <div class="hod-note">Replace avatar with HOD photo</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Agric -->
-        <div class="dept-card fade-up">
-          <div class="dept-top">
-            <div class="dept-emoji-icon green">🌾</div>
-            <div class="dept-name-wrap">
-              <h3 class="dept-title">Agricultural Science</h3>
-              <span class="dept-badge">Agribusiness</span>
-            </div>
-          </div>
-          <p class="dept-desc">Equips students with knowledge of modern farming, agribusiness, and sustainable agriculture. Graduates are prepared for food science, veterinary studies, and agro-entrepreneurship.</p>
-          <div class="dept-subjects-title"><i class="fas fa-book-open"></i> Courses Offered</div>
-          <div class="prog-subjects">
-            <span class="prog-subject">Crop Science</span>
-            <span class="prog-subject">Animal Husbandry</span>
-            <span class="prog-subject">Agricultural Economics</span>
-            <span class="prog-subject">Chemistry</span>
-            <span class="prog-subject">Biology</span>
-            <span class="prog-subject">ICT</span>
-          </div>
-          <div class="hod-strip">
-            <div class="hod-avatar green">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="hod-info">
-              <div class="hod-label">Head of Department</div>
-              <div class="hod-name">Upload Photo</div>
-              <div class="hod-note">Replace avatar with HOD photo</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Business -->
-        <div class="dept-card fade-up">
-          <div class="dept-top">
-            <div class="dept-emoji-icon yellow">💼</div>
-            <div class="dept-name-wrap">
-              <h3 class="dept-title">Business</h3>
-              <span class="dept-badge">Commerce</span>
-            </div>
-          </div>
-          <p class="dept-desc">Prepares students for commerce, entrepreneurship, and leadership in the modern business world. Emphasis on financial literacy, management principles, and economic reasoning.</p>
-          <div class="dept-subjects-title"><i class="fas fa-book-open"></i> Courses Offered</div>
-          <div class="prog-subjects">
-            <span class="prog-subject">Financial Accounting</span>
-            <span class="prog-subject">Business Management</span>
-            <span class="prog-subject">Economics</span>
-            <span class="prog-subject">Elective Mathematics</span>
-            <span class="prog-subject">Cost Accounting</span>
-            <span class="prog-subject">ICT</span>
-          </div>
-          <div class="hod-strip">
-            <div class="hod-avatar yellow">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="hod-info">
-              <div class="hod-label">Head of Department</div>
-              <div class="hod-name">Upload Photo</div>
-              <div class="hod-note">Replace avatar with HOD photo</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Visual Arts -->
-        <div class="dept-card fade-up">
-          <div class="dept-top">
-            <div class="dept-emoji-icon green">🎨</div>
-            <div class="dept-name-wrap">
-              <h3 class="dept-title">Visual Arts</h3>
-              <span class="dept-badge">Creative Arts</span>
-            </div>
-          </div>
-          <p class="dept-desc">Nurtures creative expression through drawing, painting, graphic design, ceramics, and art history. Graduates pursue careers in architecture, fashion, advertising, and fine art.</p>
-          <div class="dept-subjects-title"><i class="fas fa-book-open"></i> Courses Offered</div>
-          <div class="prog-subjects">
-            <span class="prog-subject">Picture Making</span>
-            <span class="prog-subject">Graphic Design</span>
-            <span class="prog-subject">Sculpture</span>
-            <span class="prog-subject">Ceramics</span>
-            <span class="prog-subject">Leatherwork</span>
-            <span class="prog-subject">Textiles</span>
-          </div>
-          <div class="hod-strip">
-            <div class="hod-avatar green">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="hod-info">
-              <div class="hod-label">Head of Department</div>
-              <div class="hod-name">Upload Photo</div>
-              <div class="hod-note">Replace avatar with HOD photo</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Home Economics -->
-        <div class="dept-card fade-up">
-          <div class="dept-top">
-            <div class="dept-emoji-icon yellow">🏠</div>
-            <div class="dept-name-wrap">
-              <h3 class="dept-title">Home Economics</h3>
-              <span class="dept-badge">Life Skills</span>
-            </div>
-          </div>
-          <p class="dept-desc">Develops practical skills in food science, nutrition, child development, and household management. Students are equipped for catering, hospitality, and family sciences.</p>
-          <div class="dept-subjects-title"><i class="fas fa-book-open"></i> Courses Offered</div>
-          <div class="prog-subjects">
-            <span class="prog-subject">Food &amp; Nutrition</span>
-            <span class="prog-subject">Clothing &amp; Textiles</span>
-            <span class="prog-subject">Management in Living</span>
-            <span class="prog-subject">Child Development</span>
-            <span class="prog-subject">Biology</span>
-            <span class="prog-subject">ICT</span>
-          </div>
-          <div class="hod-strip">
-            <div class="hod-avatar yellow">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="hod-info">
-              <div class="hod-label">Head of Department</div>
-              <div class="hod-name">Upload Photo</div>
-              <div class="hod-note">Replace avatar with HOD photo</div>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /dept-grid -->
+<!-- ─── DEPARTMENTS ──────────────────────────────────────── -->
+<section id="programs" class="departments">
+  <div class="container">
+    <div class="dept-header">
+      <span class="section-label">Academic Departments</span>
+      <h2 class="section-h">Discover Your Path</h2>
+      <p class="section-sub">Six WAEC-approved programmes, each led by a dedicated Head of Department committed to your academic success.</p>
     </div>
-  </section>
 
-  <!-- ===== SCHOOL AUTHORITIES ===== -->
-  <section id="authorities" class="authorities">
-    <div class="container">
-      <div class="auth-header">
-        <span class="section-tag">School Leadership</span>
-        <h2 class="section-title">Our School Authorities</h2>
-        <p class="section-sub">Meet the dedicated administrators and leaders who guide AUGUSCO toward excellence every day.</p>
-      </div>
+    <div class="dept-grid">
 
-      <!-- Headmaster -->
-      <div class="auth-headmaster fade-up">
-        <div class="headmaster-card">
-          <div class="headmaster-photo">
-            <div class="auth-avatar-lg">
-              <i class="fas fa-user-tie"></i>
-              <span class="upload-hint">Upload Photo</span>
-            </div>
-          </div>
-          <div class="headmaster-info">
-            <div class="auth-role-tag">Headmaster</div>
-            <h3 class="auth-name">Mr. / Mrs. [Name]</h3>
-            <p class="auth-bio">
-              The Headmaster provides overall academic, administrative, and pastoral leadership of
-              St. Augustine's Senior High School, Bogoso. Under his/her stewardship, AUGUSCO
-              continues to uphold its tradition of excellence, faith, and holistic student development.
-            </p>
-            <div class="auth-contact-row">
-              <span><i class="fas fa-envelope"></i> headmaster@augusco.edu.gh</span>
-              <span><i class="fas fa-phone"></i> +233 3122 12345</span>
-            </div>
+      <!-- SCIENCE -->
+      <div class="dept-card fade-up">
+        <div class="dept-card-top">
+          <div class="dept-icon-wrap g">🔬</div>
+          <div class="dept-head-text">
+            <h3 class="dept-card-title">General Science</h3>
+            <span class="dept-prog-tag">STEM Focus</span>
           </div>
         </div>
-      </div>
-
-      <!-- Assistant Heads -->
-      <div class="auth-sub-title">Assistant Headmasters</div>
-      <div class="auth-grid three fade-up">
-        <div class="auth-card">
-          <div class="auth-avatar">
-            <i class="fas fa-user-tie"></i>
-            <span class="upload-hint-sm">Upload Photo</span>
-          </div>
-          <div class="auth-card-info">
-            <div class="auth-role-tag small">Asst. Head — Academic</div>
-            <h4 class="auth-name-sm">[Name]</h4>
-            <p class="auth-card-desc">Oversees all academic activities, timetabling, examinations, and the performance of teaching staff.</p>
+        <p class="dept-desc">A rigorous programme preparing students for careers in medicine, engineering, pharmacy, and scientific research. Students develop deep analytical and practical laboratory skills.</p>
+        <div class="dept-courses">
+          <div class="dept-courses-label"><i class="fas fa-list-check"></i> Courses Offered</div>
+          <div class="courses-wrap">
+            <span class="c-tag">Core Mathematics</span>
+            <span class="c-tag">Elective Mathematics</span>
+            <span class="c-tag">Physics</span>
+            <span class="c-tag">Chemistry</span>
+            <span class="c-tag">Biology</span>
+            <span class="c-tag">ICT</span>
           </div>
         </div>
-        <div class="auth-card">
-          <div class="auth-avatar">
-            <i class="fas fa-user-tie"></i>
-            <span class="upload-hint-sm">Upload Photo</span>
+        <div class="dept-hod">
+          <div class="hod-photo"><i class="fas fa-user"></i></div>
+          <div class="hod-text">
+            <div class="hod-role">Head of Department</div>
+            <div class="hod-name">[HOD Name]</div>
+            <div class="hod-placeholder">Replace with HOD photo &amp; name</div>
           </div>
-          <div class="auth-card-info">
-            <div class="auth-role-tag small">Asst. Head — Admin</div>
-            <h4 class="auth-name-sm">[Name]</h4>
-            <p class="auth-card-desc">Manages administrative operations, staff welfare, resources, and the day-to-day running of the school.</p>
-          </div>
-        </div>
-        <div class="auth-card">
-          <div class="auth-avatar">
-            <i class="fas fa-user-tie"></i>
-            <span class="upload-hint-sm">Upload Photo</span>
-          </div>
-          <div class="auth-card-info">
-            <div class="auth-role-tag small">Asst. Head — Welfare</div>
-            <h4 class="auth-name-sm">[Name]</h4>
-            <p class="auth-card-desc">Responsible for student welfare, boarding, discipline, and guidance and counselling services.</p>
-          </div>
+          <div class="hod-edit-btn"><i class="fas fa-camera"></i></div>
         </div>
       </div>
 
-      <!-- Other Key Officers -->
-      <div class="auth-sub-title">Key Officers</div>
-      <div class="auth-grid four fade-up">
-        <div class="auth-card small-card">
-          <div class="auth-avatar sm">
-            <i class="fas fa-user"></i>
-            <span class="upload-hint-sm">Upload Photo</span>
-          </div>
-          <div class="auth-card-info">
-            <div class="auth-role-tag small">School Bursar</div>
-            <h4 class="auth-name-sm">[Name]</h4>
-            <p class="auth-card-desc">Manages school finances, fees, and budgets.</p>
+      <!-- ARTS -->
+      <div class="dept-card fade-up">
+        <div class="dept-card-top">
+          <div class="dept-icon-wrap y">📚</div>
+          <div class="dept-head-text">
+            <h3 class="dept-card-title">General Arts</h3>
+            <span class="dept-prog-tag">Humanities</span>
           </div>
         </div>
-        <div class="auth-card small-card">
-          <div class="auth-avatar sm">
-            <i class="fas fa-user"></i>
-            <span class="upload-hint-sm">Upload Photo</span>
-          </div>
-          <div class="auth-card-info">
-            <div class="auth-role-tag small">Guidance Counsellor</div>
-            <h4 class="auth-name-sm">[Name]</h4>
-            <p class="auth-card-desc">Provides personal, academic and career counselling to students.</p>
-          </div>
-        </div>
-        <div class="auth-card small-card">
-          <div class="auth-avatar sm">
-            <i class="fas fa-user"></i>
-            <span class="upload-hint-sm">Upload Photo</span>
-          </div>
-          <div class="auth-card-info">
-            <div class="auth-role-tag small">Librarian</div>
-            <h4 class="auth-name-sm">[Name]</h4>
-            <p class="auth-card-desc">Manages the school library and promotes a reading culture among students.</p>
+        <p class="dept-desc">Explores humanities and social sciences, nurturing critical thinkers, lawyers, journalists, and policymakers. Students develop strong communication and analytical abilities.</p>
+        <div class="dept-courses">
+          <div class="dept-courses-label"><i class="fas fa-list-check"></i> Courses Offered</div>
+          <div class="courses-wrap">
+            <span class="c-tag">Literature in English</span>
+            <span class="c-tag">History</span>
+            <span class="c-tag">Government</span>
+            <span class="c-tag">French</span>
+            <span class="c-tag">Economics</span>
+            <span class="c-tag">Geography</span>
           </div>
         </div>
-        <div class="auth-card small-card">
-          <div class="auth-avatar sm">
-            <i class="fas fa-user"></i>
-            <span class="upload-hint-sm">Upload Photo</span>
+        <div class="dept-hod">
+          <div class="hod-photo"><i class="fas fa-user"></i></div>
+          <div class="hod-text">
+            <div class="hod-role">Head of Department</div>
+            <div class="hod-name">[HOD Name]</div>
+            <div class="hod-placeholder">Replace with HOD photo &amp; name</div>
           </div>
-          <div class="auth-card-info">
-            <div class="auth-role-tag small">School Chaplain</div>
-            <h4 class="auth-name-sm">[Name]</h4>
-            <p class="auth-card-desc">Leads the spiritual and Catholic formation of the school community.</p>
+          <div class="hod-edit-btn"><i class="fas fa-camera"></i></div>
+        </div>
+      </div>
+
+      <!-- AGRIC -->
+      <div class="dept-card fade-up">
+        <div class="dept-card-top">
+          <div class="dept-icon-wrap g">🌾</div>
+          <div class="dept-head-text">
+            <h3 class="dept-card-title">Agricultural Science</h3>
+            <span class="dept-prog-tag">Agribusiness</span>
           </div>
+        </div>
+        <p class="dept-desc">Equips students with knowledge of modern farming, agribusiness, and sustainable agriculture. Graduates pursue food science, veterinary studies, and agro-entrepreneurship.</p>
+        <div class="dept-courses">
+          <div class="dept-courses-label"><i class="fas fa-list-check"></i> Courses Offered</div>
+          <div class="courses-wrap">
+            <span class="c-tag">Crop Science</span>
+            <span class="c-tag">Animal Husbandry</span>
+            <span class="c-tag">Agric Economics</span>
+            <span class="c-tag">Chemistry</span>
+            <span class="c-tag">Biology</span>
+            <span class="c-tag">ICT</span>
+          </div>
+        </div>
+        <div class="dept-hod">
+          <div class="hod-photo"><i class="fas fa-user"></i></div>
+          <div class="hod-text">
+            <div class="hod-role">Head of Department</div>
+            <div class="hod-name">[HOD Name]</div>
+            <div class="hod-placeholder">Replace with HOD photo &amp; name</div>
+          </div>
+          <div class="hod-edit-btn"><i class="fas fa-camera"></i></div>
+        </div>
+      </div>
+
+      <!-- BUSINESS -->
+      <div class="dept-card fade-up">
+        <div class="dept-card-top">
+          <div class="dept-icon-wrap y">💼</div>
+          <div class="dept-head-text">
+            <h3 class="dept-card-title">Business</h3>
+            <span class="dept-prog-tag">Commerce</span>
+          </div>
+        </div>
+        <p class="dept-desc">Prepares students for commerce, entrepreneurship, and leadership. Emphasis on financial literacy, management principles, and sound economic reasoning for the modern world.</p>
+        <div class="dept-courses">
+          <div class="dept-courses-label"><i class="fas fa-list-check"></i> Courses Offered</div>
+          <div class="courses-wrap">
+            <span class="c-tag">Financial Accounting</span>
+            <span class="c-tag">Business Management</span>
+            <span class="c-tag">Economics</span>
+            <span class="c-tag">Elective Maths</span>
+            <span class="c-tag">Cost Accounting</span>
+            <span class="c-tag">ICT</span>
+          </div>
+        </div>
+        <div class="dept-hod">
+          <div class="hod-photo"><i class="fas fa-user"></i></div>
+          <div class="hod-text">
+            <div class="hod-role">Head of Department</div>
+            <div class="hod-name">[HOD Name]</div>
+            <div class="hod-placeholder">Replace with HOD photo &amp; name</div>
+          </div>
+          <div class="hod-edit-btn"><i class="fas fa-camera"></i></div>
+        </div>
+      </div>
+
+      <!-- VISUAL ARTS -->
+      <div class="dept-card fade-up">
+        <div class="dept-card-top">
+          <div class="dept-icon-wrap g">🎨</div>
+          <div class="dept-head-text">
+            <h3 class="dept-card-title">Visual Arts</h3>
+            <span class="dept-prog-tag">Creative Arts</span>
+          </div>
+        </div>
+        <p class="dept-desc">Nurtures creative expression through drawing, painting, graphic design, ceramics, and art history. Graduates pursue architecture, fashion, advertising, and fine art careers.</p>
+        <div class="dept-courses">
+          <div class="dept-courses-label"><i class="fas fa-list-check"></i> Courses Offered</div>
+          <div class="courses-wrap">
+            <span class="c-tag">Picture Making</span>
+            <span class="c-tag">Graphic Design</span>
+            <span class="c-tag">Sculpture</span>
+            <span class="c-tag">Ceramics</span>
+            <span class="c-tag">Leatherwork</span>
+            <span class="c-tag">Textiles</span>
+          </div>
+        </div>
+        <div class="dept-hod">
+          <div class="hod-photo"><i class="fas fa-user"></i></div>
+          <div class="hod-text">
+            <div class="hod-role">Head of Department</div>
+            <div class="hod-name">[HOD Name]</div>
+            <div class="hod-placeholder">Replace with HOD photo &amp; name</div>
+          </div>
+          <div class="hod-edit-btn"><i class="fas fa-camera"></i></div>
+        </div>
+      </div>
+
+      <!-- HOME ECONS -->
+      <div class="dept-card fade-up">
+        <div class="dept-card-top">
+          <div class="dept-icon-wrap y">🏠</div>
+          <div class="dept-head-text">
+            <h3 class="dept-card-title">Home Economics</h3>
+            <span class="dept-prog-tag">Life Skills</span>
+          </div>
+        </div>
+        <p class="dept-desc">Develops practical skills in food science, nutrition, child development, and household management. Students are equipped for catering, hospitality, and family sciences.</p>
+        <div class="dept-courses">
+          <div class="dept-courses-label"><i class="fas fa-list-check"></i> Courses Offered</div>
+          <div class="courses-wrap">
+            <span class="c-tag">Food &amp; Nutrition</span>
+            <span class="c-tag">Clothing &amp; Textiles</span>
+            <span class="c-tag">Management in Living</span>
+            <span class="c-tag">Child Development</span>
+            <span class="c-tag">Biology</span>
+            <span class="c-tag">ICT</span>
+          </div>
+        </div>
+        <div class="dept-hod">
+          <div class="hod-photo"><i class="fas fa-user"></i></div>
+          <div class="hod-text">
+            <div class="hod-role">Head of Department</div>
+            <div class="hod-name">[HOD Name]</div>
+            <div class="hod-placeholder">Replace with HOD photo &amp; name</div>
+          </div>
+          <div class="hod-edit-btn"><i class="fas fa-camera"></i></div>
         </div>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== WHY US ===== -->
-  <section class="why-us">
-    <div class="container">
-      <div class="why-inner">
-        <div class="why-text">
-          <span class="section-tag">Why Choose AUGUSCO</span>
-          <h2 class="section-title">An Education That<br/>Goes Beyond Books</h2>
-          <p class="section-sub" style="margin-bottom:2rem;">
-            At AUGUSCO, we believe education transforms lives. Our approach combines academic rigour
-            with character formation, sports, culture, and community service.
-          </p>
-          <a href="#admissions" class="btn btn-primary">
-            <i class="fas fa-arrow-right"></i> Join Our Community
-          </a>
+<!-- ─── WHY AUGUSCO ──────────────────────────────────────── -->
+<section class="why">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <span class="section-label">Why Choose AUGUSCO</span>
+        <h2 class="section-h">An Education That<br/>Goes Beyond Books</h2>
+        <p class="section-sub" style="margin-bottom:2.5rem;">At AUGUSCO, we believe education transforms lives. Our approach blends academic rigour with character formation, sports, culture, and community service.</p>
+        <a href="#admissions" class="btn btn-dark"><i class="fas fa-arrow-right"></i> Join Our Community</a>
+      </div>
+      <div class="why-features">
+        <div class="why-card fade-up">
+          <div class="wc-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="wc-title">Experienced Faculty</div>
+          <div class="wc-desc">Qualified and dedicated teachers committed to every student's success and growth.</div>
         </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon"><i class="fas fa-cross"></i></div>
+          <div class="wc-title">Catholic Values</div>
+          <div class="wc-desc">Education rooted in Faith, Hope, and Love shapes outstanding, compassionate citizens.</div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon"><i class="fas fa-trophy"></i></div>
+          <div class="wc-title">Sports &amp; Culture</div>
+          <div class="wc-desc">Rich extracurricular life with athletics, cultural groups, and student clubs.</div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon"><i class="fas fa-users"></i></div>
+          <div class="wc-title">Mixed Gender</div>
+          <div class="wc-desc">A diverse, inclusive environment preparing students for the real world.</div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon"><i class="fas fa-laptop"></i></div>
+          <div class="wc-title">ICT Integration</div>
+          <div class="wc-desc">Modern computing labs supporting digital literacy across all programmes.</div>
+        </div>
+        <div class="why-card fade-up">
+          <div class="wc-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="wc-title">Safe Campus</div>
+          <div class="wc-desc">A secure, nurturing residential and day-school environment for all students.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="why-features">
-          <div class="why-card fade-up">
-            <i class="fas fa-chalkboard-teacher"></i>
-            <h4>Experienced Faculty</h4>
-            <p>Qualified and dedicated teachers committed to every student's success.</p>
+<!-- ─── AUTHORITIES ──────────────────────────────────────── -->
+<section id="authorities" class="authorities">
+  <div class="container">
+    <div class="auth-header">
+      <span class="section-label">School Leadership</span>
+      <h2 class="section-h">Our School Authorities</h2>
+      <p class="section-sub">Meet the dedicated administrators who guide AUGUSCO toward excellence every single day.</p>
+    </div>
+
+    <!-- HEADMASTER -->
+    <div class="headmaster-feature fade-up">
+      <div class="hm-photo-col">
+        <div class="hm-avatar">
+          <i class="fas fa-user-tie"></i>
+          <span class="hm-upload-hint">Upload Photo</span>
+        </div>
+        <div class="hm-role-badge">Headmaster</div>
+        <div class="hm-name-col">[Headmaster Name]</div>
+      </div>
+      <div class="hm-info-col">
+        <div class="hm-title-row">
+          <h3 class="hm-title">Mr. / Mrs. [Full Name]</h3>
+          <div class="hm-sub">Headmaster, St. Augustine's SHS, Bogoso</div>
+        </div>
+        <p class="hm-bio">
+          The Headmaster provides overall academic, administrative, and pastoral leadership of St. Augustine's Senior High School. Under his/her stewardship, AUGUSCO continues to uphold its longstanding tradition of excellence, faith, and holistic student development — producing graduates who go on to excel in universities and professions across Ghana and beyond.
+        </p>
+        <div class="hm-contacts">
+          <div class="hm-contact"><i class="fas fa-envelope"></i> headmaster@augusco.edu.gh</div>
+          <div class="hm-contact"><i class="fas fa-phone"></i> +233 3122 12345</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ASSISTANT HEADS -->
+    <div class="auth-section-label">Assistant Headmasters</div>
+    <div class="auth-3col">
+      <div class="auth-person-card fade-up">
+        <div class="auth-photo-area">
+          <div class="auth-avatar-circle"><i class="fas fa-user-tie"></i></div>
+          <div class="auth-up-hint">Upload Photo</div>
+        </div>
+        <div class="auth-info-area">
+          <div class="auth-role-pill">Asst. Head — Academic</div>
+          <h4 class="auth-person-name">[Name]</h4>
+          <p class="auth-person-desc">Oversees all academic activities, timetabling, examinations, and the performance of teaching staff across all departments.</p>
+        </div>
+      </div>
+      <div class="auth-person-card fade-up">
+        <div class="auth-photo-area">
+          <div class="auth-avatar-circle"><i class="fas fa-user-tie"></i></div>
+          <div class="auth-up-hint">Upload Photo</div>
+        </div>
+        <div class="auth-info-area">
+          <div class="auth-role-pill">Asst. Head — Administration</div>
+          <h4 class="auth-person-name">[Name]</h4>
+          <p class="auth-person-desc">Manages administrative operations, staff welfare, resources, and the day-to-day running of the school.</p>
+        </div>
+      </div>
+      <div class="auth-person-card fade-up">
+        <div class="auth-photo-area">
+          <div class="auth-avatar-circle"><i class="fas fa-user-tie"></i></div>
+          <div class="auth-up-hint">Upload Photo</div>
+        </div>
+        <div class="auth-info-area">
+          <div class="auth-role-pill">Asst. Head — Welfare</div>
+          <h4 class="auth-person-name">[Name]</h4>
+          <p class="auth-person-desc">Responsible for student welfare, boarding, discipline, and guidance and counselling services.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY OFFICERS -->
+    <div class="auth-section-label">Key Officers</div>
+    <div class="auth-4col">
+      <div class="auth-person-card fade-up">
+        <div class="auth-photo-area yellow-grad">
+          <div class="auth-avatar-circle sm"><i class="fas fa-coins"></i></div>
+          <div class="auth-up-hint">Upload Photo</div>
+        </div>
+        <div class="auth-info-area">
+          <div class="auth-role-pill">School Bursar</div>
+          <h4 class="auth-person-name">[Name]</h4>
+          <p class="auth-person-desc">Manages school finances, fees collection, and budget planning.</p>
+        </div>
+      </div>
+      <div class="auth-person-card fade-up">
+        <div class="auth-photo-area yellow-grad">
+          <div class="auth-avatar-circle sm"><i class="fas fa-comments"></i></div>
+          <div class="auth-up-hint">Upload Photo</div>
+        </div>
+        <div class="auth-info-area">
+          <div class="auth-role-pill">Guidance Counsellor</div>
+          <h4 class="auth-person-name">[Name]</h4>
+          <p class="auth-person-desc">Provides personal, academic, and career counselling to students.</p>
+        </div>
+      </div>
+      <div class="auth-person-card fade-up">
+        <div class="auth-photo-area yellow-grad">
+          <div class="auth-avatar-circle sm"><i class="fas fa-book"></i></div>
+          <div class="auth-up-hint">Upload Photo</div>
+        </div>
+        <div class="auth-info-area">
+          <div class="auth-role-pill">School Librarian</div>
+          <h4 class="auth-person-name">[Name]</h4>
+          <p class="auth-person-desc">Manages the school library and promotes a reading culture campus-wide.</p>
+        </div>
+      </div>
+      <div class="auth-person-card fade-up">
+        <div class="auth-photo-area yellow-grad">
+          <div class="auth-avatar-circle sm"><i class="fas fa-church"></i></div>
+          <div class="auth-up-hint">Upload Photo</div>
+        </div>
+        <div class="auth-info-area">
+          <div class="auth-role-pill">School Chaplain</div>
+          <h4 class="auth-person-name">[Name]</h4>
+          <p class="auth-person-desc">Leads the spiritual and Catholic formation of the school community.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── NEWS ────────────────────────────────────────────── -->
+<section id="news" class="news">
+  <div class="container">
+    <div class="news-head-row">
+      <div>
+        <span class="section-label">News &amp; Events</span>
+        <h2 class="section-h" style="margin-bottom:0;">Latest from AUGUSCO</h2>
+      </div>
+      <a href="#" class="btn btn-outline-g"><i class="fas fa-newspaper"></i> All News</a>
+    </div>
+    <div class="news-grid">
+      <div class="news-card fade-up">
+        <div class="news-img">
+          <span class="news-cat-tag">Academics</span>
+          🎓
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><i class="fas fa-calendar-alt"></i> June 15, 2025</div>
+          <h3>AUGUSCO Students Excel in 2025 WASSCE — Record Performance</h3>
+          <p>Our 2025 cohort achieved outstanding results, with over 78% of candidates obtaining aggregate 6–24 in the WAEC Senior School Certificate Examination.</p>
+          <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="news-card fade-up">
+        <div class="news-img alt1">
+          <span class="news-cat-tag">Sports</span>
+          🏆
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><i class="fas fa-calendar-alt"></i> May 28, 2025</div>
+          <h3>AUGUSCO Finishes 2nd at Western Region Inter-Schools Athletics Meet</h3>
+          <p>Our athletes delivered a stellar performance securing 2nd place overall and winning gold in three track events at the annual Takoradi meet.</p>
+          <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="news-card fade-up">
+        <div class="news-img alt2">
+          <span class="news-cat-tag">Community</span>
+          🌱
+        </div>
+        <div class="news-body">
+          <div class="news-meta"><i class="fas fa-calendar-alt"></i> April 22, 2025</div>
+          <h3>Green Earth Initiative: Students Plant 500 Trees Around Bogoso</h3>
+          <p>In commemoration of Earth Day, AUGUSCO students planted 500 trees as part of the school's environmental sustainability drive.</p>
+          <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GALLERY ──────────────────────────────────────────── -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="section-label">Photo Gallery</span>
+      <h2 class="section-h">Life at AUGUSCO</h2>
+      <p class="section-sub">A glimpse into the vibrant campus life, events, and achievements at St. Augustine's SHS.</p>
+    </div>
+    <div class="gallery-mosaic">
+      <div class="gm-item"><i class="fas fa-school"></i><div class="gm-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gm-item"><i class="fas fa-flask"></i><div class="gm-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gm-item"><i class="fas fa-running"></i><div class="gm-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gm-item"><i class="fas fa-music"></i><div class="gm-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gm-item"><i class="fas fa-book-reader"></i><div class="gm-overlay"><i class="fas fa-expand"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─────────────────────────────────────── -->
+<section class="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <span class="section-label">Testimonials</span>
+      <h2 class="section-h">Voices from Our Community</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="tcard fade-up">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">AUGUSCO gave me more than a certificate — it gave me discipline, faith, and the drive to succeed. The teachers genuinely cared about our futures. I am proud to be an Augustinian.</p>
+        <div class="tcard-author">
+          <div class="tca-avatar">AK</div>
+          <div>
+            <div class="tca-name">Ama Koomson</div>
+            <div class="tca-role">Alumna · Class of 2018 · Medical Student, UG</div>
           </div>
-          <div class="why-card fade-up">
-            <i class="fas fa-cross"></i>
-            <h4>Catholic Values</h4>
-            <p>Education rooted in Faith, Hope, and Love shapes outstanding citizens.</p>
+        </div>
+      </div>
+      <div class="tcard fade-up">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-quote">The General Science programme at AUGUSCO was thorough and demanding in the best possible way. It prepared me excellently for university. I wouldn't trade my AUGUSCO experience for anything.</p>
+        <div class="tcard-author">
+          <div class="tca-avatar">KA</div>
+          <div>
+            <div class="tca-name">Kweku Asante</div>
+            <div class="tca-role">Alumnus · Class of 2020 · Engineering, KNUST</div>
           </div>
-          <div class="why-card fade-up">
-            <i class="fas fa-trophy"></i>
-            <h4>Sports &amp; Culture</h4>
-            <p>Rich extracurricular life with athletics, cultural groups, and clubs.</p>
-          </div>
-          <div class="why-card fade-up">
-            <i class="fas fa-users"></i>
-            <h4>Mixed Gender</h4>
-            <p>A diverse, inclusive environment preparing students for the real world.</p>
-          </div>
-          <div class="why-card fade-up">
-            <i class="fas fa-laptop"></i>
-            <h4>ICT Integration</h4>
-            <p>Modern computing labs supporting digital literacy across all programmes.</p>
-          </div>
-          <div class="why-card fade-up">
-            <i class="fas fa-shield-alt"></i>
-            <h4>Safe Campus</h4>
-            <p>A secure, nurturing residential and day-school environment for students.</p>
+        </div>
+      </div>
+      <div class="tcard fade-up">
+        <div class="tcard-stars">★★★★½</div>
+        <p class="tcard-quote">Choosing AUGUSCO for my ward was one of the best decisions I made as a parent. The commitment to Catholic values, academic quality, and discipline is unmatched in the region.</p>
+        <div class="tcard-author">
+          <div class="tca-avatar">MB</div>
+          <div>
+            <div class="tca-name">Mrs. Mary Boateng</div>
+            <div class="tca-role">Parent · Bogoso</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== NEWS ===== -->
-  <section id="news" class="news">
-    <div class="container">
-      <div class="news-header">
-        <div>
-          <span class="section-tag">News &amp; Events</span>
-          <h2 class="section-title" style="margin-bottom:0;">Latest from AUGUSCO</h2>
+<!-- ─── ADMISSIONS ───────────────────────────────────────── -->
+<section id="admissions" class="admissions">
+  <div class="container">
+    <div class="admissions-grid">
+      <div>
+        <span class="section-label">Admissions</span>
+        <h2 class="section-h">Begin Your AUGUSCO Journey</h2>
+        <p style="color:var(--ink3);margin-bottom:1.5rem;line-height:1.8;">Admission is primarily through the Computerised School Selection &amp; Placement System (CSSPS). Prospective students may also enquire directly.</p>
+        <div class="steps-list">
+          <div class="step-row">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Complete BECE</h4>
+              <p>Sit and pass the Basic Education Certificate Examination (BECE) conducted by WAEC.</p>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>CSSPS Selection</h4>
+              <p>Select AUGUSCO as one of your school choices on the Ghana Education Service's CSSPS portal.</p>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Check Placement</h4>
+              <p>Log onto the CSSPS website to check your placement result and confirm your offer.</p>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h4>Report to School</h4>
+              <p>Arrive on the official reporting date with all required documents, fees, and personal effects.</p>
+            </div>
+          </div>
         </div>
-        <a href="#news" class="btn btn-green">
-          <i class="fas fa-newspaper"></i> All News
-        </a>
+        <a href="https://cssps.gov.gh" target="_blank" class="btn btn-dark"><i class="fas fa-external-link-alt"></i> Visit CSSPS Portal</a>
       </div>
 
-      <div class="news-grid">
-        <div class="news-card fade-up">
-          <div class="news-img">
-            <span class="news-cat">Academics</span>
-            🎓
+      <div class="enquiry-box">
+        <h3>Send an Enquiry</h3>
+        <form id="admissionForm">
+          <div class="fg-row">
+            <div class="fg"><label>First Name</label><input type="text" placeholder="e.g. Kwame" required /></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="e.g. Mensah" required /></div>
           </div>
-          <div class="news-body">
-            <p class="news-date"><i class="fas fa-calendar"></i> June 15, 2025</p>
-            <h3>AUGUSCO Students Excel in 2025 WASSCE — Record Performance</h3>
-            <p>Our 2025 cohort achieved outstanding results, with over 78% of candidates obtaining aggregate 6–24 in the WAEC Senior School Certificate Examination.</p>
-            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+          <div class="fg"><label>Email Address</label><input type="email" placeholder="your@email.com" required /></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+233 XX XXX XXXX" /></div>
+          <div class="fg">
+            <label>Programme of Interest</label>
+            <select required>
+              <option value="" disabled selected>Select a programme</option>
+              <option>General Science</option>
+              <option>General Arts</option>
+              <option>Agricultural Science</option>
+              <option>Business</option>
+              <option>Visual Arts</option>
+              <option>Home Economics</option>
+            </select>
           </div>
-        </div>
-
-        <div class="news-card fade-up">
-          <div class="news-img yellow-bg">
-            <span class="news-cat">Sports</span>
-            🏆
-          </div>
-          <div class="news-body">
-            <p class="news-date"><i class="fas fa-calendar"></i> May 28, 2025</p>
-            <h3>AUGUSCO Finishes 2nd at Western Region Inter-Schools Athletics Meet</h3>
-            <p>Our athletes put up a stellar performance at the annual inter-schools meet held in Takoradi, securing second place overall and winning gold in three track events.</p>
-            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="news-card fade-up">
-          <div class="news-img mid-bg">
-            <span class="news-cat">Community</span>
-            🌱
-          </div>
-          <div class="news-body">
-            <p class="news-date"><i class="fas fa-calendar"></i> April 22, 2025</p>
-            <h3>Green Earth Initiative: Students Plant 500 Trees Around Bogoso Community</h3>
-            <p>In commemoration of Earth Day, AUGUSCO students joined hands with the community to plant 500 trees as part of the school's environmental sustainability drive.</p>
-            <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALLERY ===== -->
-  <section id="gallery" class="gallery">
-    <div class="container">
-      <div class="gallery-header">
-        <span class="section-tag">Photo Gallery</span>
-        <h2 class="section-title">Life at AUGUSCO</h2>
-        <p class="section-sub" style="margin:0 auto;">A glimpse into the vibrant campus life, events, and achievements at St. Augustine's SHS.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <i class="fas fa-school"></i>
-          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item">
-          <i class="fas fa-flask"></i>
-          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item">
-          <i class="fas fa-running"></i>
-          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item">
-          <i class="fas fa-music"></i>
-          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-        </div>
-        <div class="gallery-item">
-          <i class="fas fa-book"></i>
-          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
-        </div>
+          <div class="fg"><label>Message / Question</label><textarea rows="3" placeholder="Ask us anything about admissions..."></textarea></div>
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Submit Enquiry
+          </button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="testimonials-header">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">Voices from Our Community</h2>
+<!-- ─── CONTACT ──────────────────────────────────────────── -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="section-label">Get In Touch</span>
+        <h2 class="contact-info-title">We'd Love to<br/>Hear From You</h2>
+        <p class="contact-info-sub">Have a question about admissions, academic programmes, or school life? Our team is ready to help.</p>
+        <div class="contact-items">
+          <div class="ci"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><div><div class="ci-label">Address</div><div class="ci-value">Bogoso, Prestea Huni-Valley District, Western Region</div></div></div>
+          <div class="ci"><div class="ci-icon"><i class="fas fa-phone"></i></div><div><div class="ci-label">Phone</div><div class="ci-value">+233 3122 12345</div></div></div>
+          <div class="ci"><div class="ci-icon"><i class="fas fa-envelope"></i></div><div><div class="ci-label">Email</div><div class="ci-value">info@augusco.edu.gh</div></div></div>
+          <div class="ci"><div class="ci-icon"><i class="fas fa-clock"></i></div><div><div class="ci-label">Office Hours</div><div class="ci-value">Mon – Fri: 8:00 AM – 4:00 PM</div></div></div>
+        </div>
+        <div class="map-box">
+          <i class="fas fa-map-marked-alt"></i>
+          <span>Bogoso, Western Region, Ghana</span>
+          <a href="https://maps.google.com/?q=Bogoso+Ghana" target="_blank"><i class="fas fa-external-link-alt"></i> Open in Google Maps</a>
+        </div>
       </div>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      <div class="contact-form-box">
+        <h3>Send a Message</h3>
+        <form id="contactForm">
+          <div class="fg-row">
+            <div class="fg"><label>Your Name</label><input type="text" placeholder="Full name" required /></div>
+            <div class="fg"><label>Phone</label><input type="tel" placeholder="+233 XX XXX XXXX" /></div>
           </div>
-          <p class="testimonial-text">
-            "AUGUSCO gave me more than a certificate — it gave me discipline, faith, and the drive to succeed.
-            The teachers genuinely cared about our futures. I am proud to be an Augustinian."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">AK</div>
-            <div class="author-info">
-              <div class="name">Ama Koomson</div>
-              <div class="role">Alumna · Class of 2018 · Medical Student, UG</div>
-            </div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" required /></div>
+          <div class="fg">
+            <label>Subject</label>
+            <select>
+              <option>General Enquiry</option>
+              <option>Admissions</option>
+              <option>Academic Programme</option>
+              <option>Fees &amp; Bursary</option>
+              <option>Other</option>
+            </select>
           </div>
-        </div>
-
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">
-            "The General Science programme at AUGUSCO was thorough and demanding in the best possible way.
-            It prepared me excellently for university — I wouldn't trade my AUGUSCO experience for anything."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">KA</div>
-            <div class="author-info">
-              <div class="name">Kweku Asante</div>
-              <div class="role">Alumnus · Class of 2020 · Engineering Student, KNUST</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card fade-up">
-          <div class="testimonial-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-          </div>
-          <p class="testimonial-text">
-            "Choosing AUGUSCO for my ward was one of the best decisions I made as a parent.
-            The school's commitment to Catholic values, academic quality, and discipline is unmatched in the region."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">MB</div>
-            <div class="author-info">
-              <div class="name">Mrs. Mary Boateng</div>
-              <div class="role">Parent · Bogoso</div>
-            </div>
-          </div>
-        </div>
+          <div class="fg"><label>Message</label><textarea rows="5" placeholder="Type your message here..." required></textarea></div>
+          <button type="submit" class="btn btn-dark" style="width:100%;justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== ADMISSIONS ===== -->
-  <section id="admissions" class="admissions">
-    <div class="container">
-      <div class="admissions-inner">
-        <div>
-          <span class="section-tag">Admissions</span>
-          <h2 class="section-title">Begin Your AUGUSCO Journey</h2>
-          <p style="color:var(--gray-600);margin-bottom:1.5rem;">
-            Admission into St. Augustine's SHS is primarily through the Computerised School Selection &amp;
-            Placement System (CSSPS). Prospective students may also enquire directly.
-          </p>
-
-          <div class="admission-steps">
-            <div class="step">
-              <div class="step-num">1</div>
-              <div class="step-content">
-                <h4>Complete BECE</h4>
-                <p>Sit and pass the Basic Education Certificate Examination (BECE) conducted by WAEC.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-num">2</div>
-              <div class="step-content">
-                <h4>CSSPS Selection</h4>
-                <p>Select AUGUSCO as one of your school choices on the Ghana Education Service's CSSPS portal.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-num">3</div>
-              <div class="step-content">
-                <h4>Check Placement</h4>
-                <p>Log onto the CSSPS website to check your placement result and confirm your offer.</p>
-              </div>
-            </div>
-            <div class="step">
-              <div class="step-num">4</div>
-              <div class="step-content">
-                <h4>Report to School</h4>
-                <p>Arrive on the official reporting date with all required documents, fees, and personal effects.</p>
-              </div>
-            </div>
-          </div>
-
-          <a href="https://cssps.gov.gh" target="_blank" class="btn btn-green">
-            <i class="fas fa-external-link-alt"></i> Visit CSSPS Portal
-          </a>
+<!-- ─── FOOTER ───────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="ft-brand">
+        <div class="fn">St. Augustine's SHS</div>
+        <div class="fs">AUGUSCO · Bogoso, Ghana</div>
+        <p>Nurturing future leaders through faith, excellence, and service since 1957. Rooted in Catholic values. Committed to holistic student development.</p>
+        <div class="ft-socials">
+          <a href="#" class="ft-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="ft-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="ft-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="ft-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
-
-        <div class="admission-form">
-          <h3>Send an Enquiry</h3>
-          <form id="admissionForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label>First Name</label>
-                <input type="text" placeholder="e.g. Kwame" required />
-              </div>
-              <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" placeholder="e.g. Mensah" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="tel" placeholder="+233 XX XXX XXXX" />
-            </div>
-            <div class="form-group">
-              <label>Programme of Interest</label>
-              <select required>
-                <option value="" disabled selected>Select a programme</option>
-                <option>General Science</option>
-                <option>General Arts</option>
-                <option>Agricultural Science</option>
-                <option>Business</option>
-                <option>Visual Arts</option>
-                <option>Home Economics</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Your Message / Question</label>
-              <textarea rows="3" placeholder="Ask us anything about admissions..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-              <i class="fas fa-paper-plane"></i> Submit Enquiry
-            </button>
-          </form>
-        </div>
+      </div>
+      <div class="ft-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+          <li><a href="#programs"><i class="fas fa-chevron-right"></i> Academics</a></li>
+          <li><a href="#authorities"><i class="fas fa-chevron-right"></i> Leadership</a></li>
+          <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Programmes</h4>
+        <ul>
+          <li><a href="#programs"><i class="fas fa-chevron-right"></i> General Science</a></li>
+          <li><a href="#programs"><i class="fas fa-chevron-right"></i> General Arts</a></li>
+          <li><a href="#programs"><i class="fas fa-chevron-right"></i> Agricultural Science</a></li>
+          <li><a href="#programs"><i class="fas fa-chevron-right"></i> Business</a></li>
+          <li><a href="#programs"><i class="fas fa-chevron-right"></i> Visual Arts</a></li>
+          <li><a href="#programs"><i class="fas fa-chevron-right"></i> Home Economics</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Bogoso, Western Region</a></li>
+          <li><a href="tel:+233312212345"><i class="fas fa-phone"></i> +233 3122 12345</a></li>
+          <li><a href="mailto:info@augusco.edu.gh"><i class="fas fa-envelope"></i> info@augusco.edu.gh</a></li>
+          <li><a href="https://augusco.myonlineadmission.com/" target="_blank"><i class="fas fa-globe"></i> Online Admissions</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div>
-          <span class="section-tag">Get In Touch</span>
-          <h2 class="contact-info-title">We'd Love to<br/>Hear From You</h2>
-          <p class="contact-info-sub">
-            Have a question about admissions, academic programmes, or school life?
-            Reach out — our team is happy to help.
-          </p>
-
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="contact-item-text">
-                <div class="label">Address</div>
-                <div class="value">Bogoso, Prestea Huni-Valley District<br/>Western Region, Ghana</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-item-text">
-                <div class="label">Phone</div>
-                <div class="value">+233 3122 12345</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
-              <div class="contact-item-text">
-                <div class="label">Email</div>
-                <div class="value">info@augusco.edu.gh</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
-              <div class="contact-item-text">
-                <div class="label">Office Hours</div>
-                <div class="value">Mon – Fri: 8:00 AM – 4:00 PM</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="map-placeholder">
-            <i class="fas fa-map"></i>
-            <p>Bogoso, Western Region, Ghana</p>
-            <a href="https://maps.google.com/?q=Bogoso+Ghana" target="_blank"
-               style="color:var(--yellow);font-size:.85rem;font-weight:600;margin-top:.25rem;">
-              <i class="fas fa-external-link-alt"></i> Open in Google Maps
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-form-wrap">
-          <h3>Send a Message</h3>
-          <form id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label>Your Name</label>
-                <input type="text" placeholder="Full name" required />
-              </div>
-              <div class="form-group">
-                <label>Phone</label>
-                <input type="tel" placeholder="+233 XX XXX XXXX" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Email</label>
-              <input type="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label>Subject</label>
-              <select>
-                <option>General Enquiry</option>
-                <option>Admissions</option>
-                <option>Academic Programme</option>
-                <option>Fees &amp; Bursary</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Message</label>
-              <textarea rows="5" placeholder="Type your message here..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-green" style="width:100%;justify-content:center;">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
-        </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 St. Augustine's Senior High School, Bogoso (AUGUSCO). All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
       </div>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo-name">St. Augustine's SHS</div>
-          <div class="logo-sub">AUGUSCO · Bogoso, Ghana</div>
-          <p>
-            Nurturing future leaders through faith, excellence, and service
-            since 1957. Rooted in Catholic values. Committed to the holistic
-            development of every student.
-          </p>
-          <div class="footer-social">
-            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="#about"><i class="fas fa-chevron-right"></i> About AUGUSCO</a></li>
-            <li><a href="#programs"><i class="fas fa-chevron-right"></i> Academic Programmes</a></li>
-            <li><a href="#news"><i class="fas fa-chevron-right"></i> News &amp; Events</a></li>
-            <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
-            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Programmes</h4>
-          <ul>
-            <li><a href="#programs"><i class="fas fa-chevron-right"></i> General Science</a></li>
-            <li><a href="#programs"><i class="fas fa-chevron-right"></i> General Arts</a></li>
-            <li><a href="#programs"><i class="fas fa-chevron-right"></i> Agricultural Science</a></li>
-            <li><a href="#programs"><i class="fas fa-chevron-right"></i> Business</a></li>
-            <li><a href="#programs"><i class="fas fa-chevron-right"></i> Visual Arts</a></li>
-            <li><a href="#programs"><i class="fas fa-chevron-right"></i> Home Economics</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fas fa-map-marker-alt"></i>
-                Bogoso, Western Region, Ghana
-              </a>
-            </li>
-            <li>
-              <a href="tel:+233312212345">
-                <i class="fas fa-phone"></i>
-                +233 3122 12345
-              </a>
-            </li>
-            <li>
-              <a href="mailto:info@augusco.edu.gh">
-                <i class="fas fa-envelope"></i>
-                info@augusco.edu.gh
-              </a>
-            </li>
-            <li>
-              <a href="https://augusco.myonlineadmission.com/" target="_blank">
-                <i class="fas fa-globe"></i>
-                Online Admissions Portal
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 St. Augustine's Senior High School, Bogoso (AUGUSCO). All rights reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Sitemap</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll to top -->
-  <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
