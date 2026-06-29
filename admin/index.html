@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Login — AUGUSCO</title>
+<link rel="stylesheet" href="css/admin.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <div class="login-brand">
+      <i class="fas fa-graduation-cap"></i>
+      <h1>AUGUSCO Admin</h1>
+      <p>Sign in to manage the school website</p>
+    </div>
+    <form id="loginForm" class="login-form">
+      <label>Email
+        <input type="email" name="email" required placeholder="admin@augusco.edu.gh" />
+      </label>
+      <label>Password
+        <input type="password" name="password" required placeholder="••••••••" />
+      </label>
+      <button type="submit">Sign In</button>
+      <div id="loginError" class="login-error"></div>
+    </form>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

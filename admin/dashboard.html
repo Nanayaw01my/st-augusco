@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin Dashboard — AUGUSCO</title>
+<link rel="stylesheet" href="css/admin.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="dash-shell">
+    <aside class="dash-sidebar">
+      <div class="dash-logo"><i class="fas fa-graduation-cap"></i> AUGUSCO</div>
+      <nav class="dash-nav">
+        <button class="dash-nav-btn active" data-tab="news"><i class="fas fa-newspaper"></i> News</button>
+        <button class="dash-nav-btn" data-tab="gallery"><i class="fas fa-images"></i> Gallery</button>
+        <button class="dash-nav-btn" data-tab="departments"><i class="fas fa-school"></i> Departments</button>
+        <button class="dash-nav-btn" data-tab="authorities"><i class="fas fa-user-tie"></i> Authorities</button>
+      </nav>
+      <div class="dash-sidebar-footer">
+        <a href="/" target="_blank" class="dash-view-site"><i class="fas fa-external-link-alt"></i> View Site</a>
+        <button id="logoutBtn" class="dash-logout"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+      </div>
+    </aside>
+
+    <main class="dash-main">
+      <header class="dash-header">
+        <h1 id="panelTitle">News &amp; Announcements</h1>
+        <span id="adminEmail" class="dash-admin-email"></span>
+      </header>
+
+      <!-- NEWS TAB -->
+      <section class="dash-panel active" id="panel-news">
+        <button class="add-btn" data-open="news"><i class="fas fa-plus"></i> Add News Post</button>
+        <div class="dash-list" id="newsList"></div>
+      </section>
+
+      <!-- GALLERY TAB -->
+      <section class="dash-panel" id="panel-gallery">
+        <button class="add-btn" data-open="gallery"><i class="fas fa-plus"></i> Upload Photo</button>
+        <div class="dash-grid" id="galleryList"></div>
+      </section>
+
+      <!-- DEPARTMENTS TAB -->
+      <section class="dash-panel" id="panel-departments">
+        <button class="add-btn" data-open="department"><i class="fas fa-plus"></i> Add Department</button>
+        <div class="dash-list" id="departmentsList"></div>
+      </section>
+
+      <!-- AUTHORITIES TAB -->
+      <section class="dash-panel" id="panel-authorities">
+        <button class="add-btn" data-open="authority"><i class="fas fa-plus"></i> Add Authority / Staff</button>
+        <div class="dash-list" id="authoritiesList"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- NEWS MODAL -->
+  <div class="modal-overlay" id="modal-news">
+    <form class="modal-card" id="form-news" enctype="multipart/form-data">
+      <h2 id="news-modal-title">Add News Post</h2>
+      <input type="hidden" name="id" />
+      <label>Title <input type="text" name="title" required /></label>
+      <label>Category <input type="text" name="category" placeholder="Academics, Sports, Community..." /></label>
+      <label>Excerpt (short summary) <textarea name="excerpt" rows="2" required></textarea></label>
+      <label>Full Story (optional) <textarea name="body" rows="4"></textarea></label>
+      <label>Date <input type="date" name="publishedAt" /></label>
+      <label>Image <input type="file" name="image" accept="image/*" /></label>
+      <label class="checkbox-row"><input type="checkbox" name="published" checked /> Published (visible on site)</label>
+      <div class="modal-actions">
+        <button type="button" class="btn-cancel" data-close>Cancel</button>
+        <button type="submit" class="btn-save">Save</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- GALLERY MODAL -->
+  <div class="modal-overlay" id="modal-gallery">
+    <form class="modal-card" id="form-gallery" enctype="multipart/form-data">
+      <h2>Upload Gallery Photo</h2>
+      <label>Photo <input type="file" name="image" accept="image/*" required /></label>
+      <label>Caption <input type="text" name="caption" placeholder="e.g. Science Lab" /></label>
+      <div class="modal-actions">
+        <button type="button" class="btn-cancel" data-close>Cancel</button>
+        <button type="submit" class="btn-save">Upload</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- DEPARTMENT MODAL -->
+  <div class="modal-overlay" id="modal-department">
+    <form class="modal-card" id="form-department" enctype="multipart/form-data">
+      <h2 id="department-modal-title">Add Department</h2>
+      <input type="hidden" name="id" />
+      <label>Department Name <input type="text" name="name" required /></label>
+      <label>Tag <input type="text" name="tag" placeholder="e.g. STEM Focus" /></label>
+      <label>Icon (emoji) <input type="text" name="icon" placeholder="🔬" maxlength="4" /></label>
+      <label>Icon Theme
+        <select name="iconTheme"><option value="g">Green</option><option value="y">Yellow</option></select>
+      </label>
+      <label>Description <textarea name="description" rows="3"></textarea></label>
+      <label>Courses Offered (comma separated) <input type="text" name="courses" placeholder="Physics, Chemistry, Biology..." /></label>
+      <label>HOD Name <input type="text" name="hodName" /></label>
+      <label>HOD Photo <input type="file" name="hodPhoto" accept="image/*" /></label>
+      <label>Display Order <input type="number" name="order" value="0" /></label>
+      <div class="modal-actions">
+        <button type="button" class="btn-cancel" data-close>Cancel</button>
+        <button type="submit" class="btn-save">Save</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- AUTHORITY MODAL -->
+  <div class="modal-overlay" id="modal-authority">
+    <form class="modal-card" id="form-authority" enctype="multipart/form-data">
+      <h2 id="authority-modal-title">Add Authority / Staff</h2>
+      <input type="hidden" name="id" />
+      <label>Full Name <input type="text" name="name" required /></label>
+      <label>Role / Title <input type="text" name="role" required placeholder="Headmaster, Asst. Head — Academic..." /></label>
+      <label>Group
+        <select name="group">
+          <option value="headmaster">Headmaster</option>
+          <option value="assistant">Assistant Head</option>
+          <option value="officer" selected>Key Officer</option>
+        </select>
+      </label>
+      <label>Description / Responsibilities <textarea name="description" rows="3"></textarea></label>
+      <label>Email <input type="email" name="email" /></label>
+      <label>Phone <input type="text" name="phone" /></label>
+      <label>Photo <input type="file" name="photo" accept="image/*" /></label>
+      <label>Display Order <input type="number" name="order" value="0" /></label>
+      <div class="modal-actions">
+        <button type="button" class="btn-cancel" data-close>Cancel</button>
+        <button type="submit" class="btn-save">Save</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
